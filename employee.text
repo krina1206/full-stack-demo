@@ -1,0 +1,15 @@
+CREATE TABLE "employees" (
+id SERIAL PRIMARY KEY,
+name  VARCHAR(100),
+division VARCHAR(50),
+roles INTEGER[] default '{}',
+is_active boolean default true,
+is_delete boolean default false
+)
+
+CREATE TABLE "rolemaster" (
+id SERIAL PRIMARY KEY,
+name  VARCHAR(100),
+)
+
+tn this folder conect 2 database set env mongodb and postgresql so connect this databse and also login email redirect in employee pagw add edit and delete employee also se thte role in backedn table fix it 
