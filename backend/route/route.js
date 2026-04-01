@@ -1,8 +1,11 @@
 
 import express from 'express';
 import employeeController from '../controller/controller.employee.js';
+import verifyToken from '../middleware/middleware.js';
 
 const router = express.Router();
+
+router.use(verifyToken);
 
 router.get("/employees", async (req, res) => {
     try {

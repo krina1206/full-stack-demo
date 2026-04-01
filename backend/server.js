@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import sequelize from "./config/database.js";
-import connectMongoDB from "./config/mongodb.js";
+import sequelize from "./postgresql/config.js";
+import connectMongoDB from "./mongodb/config.js";
 import employeeRoutes from "./route/route.js";
 
 dotenv.config();

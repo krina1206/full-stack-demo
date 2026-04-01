@@ -1,7 +1,7 @@
-import sequelize from './config/database.js';
-import connectMongoDB from './config/mongodb.js';
-import RoleMaster from './model/roleMaster.model.js';
-import User from './model/user.model.js';
+import sequelize from './postgresql/config.js';
+import connectMongoDB from './mongodb/config.js';
+import RoleMaster from './postgresql/models/roleMaster.model.js';
+import User from './mongodb/models/user.model.js';
 import bcrypt from 'bcryptjs';
 
 const seed = async () => {

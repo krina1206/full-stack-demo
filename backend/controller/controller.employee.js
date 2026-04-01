@@ -1,8 +1,8 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import Employee from '../model/employee.model.js';
-import RoleMaster from '../model/roleMaster.model.js';
-import User from '../model/user.model.js';
+import Employee from '../postgresql/models/employee.model.js';
+import RoleMaster from '../postgresql/models/roleMaster.model.js';
+import User from '../mongodb/models/user.model.js';
 
 const getAllEmployees = async (req, res) => {
     try {

@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import sequelize from '../config.js';
 
 const Employee = sequelize.define('Employees', {
   id: {
@@ -29,4 +29,4 @@ const Employee = sequelize.define('Employees', {
   },
 });
 
-export default Employee; 
+export default Employee;
